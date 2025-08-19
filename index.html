@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subasri Mohanraj — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <header>
+    <div class="nav">
+      <div class="logo"><span>Subasri</span> Mohanraj</div>
+      <button id="mobile-menu-btn" class="mobile-toggle">Menu</button>
+      <div class="nav-right">
+        <nav aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <nav id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="avatar floaty" aria-hidden>
+        <img src="./Images/Subasri Degree Photo.jpg" alt="Subasri Mohanraj">
+      </div>
+      <h1 class="animate-on-scroll">Creative<br> Python Full Stack Developer & Web Developer</h1>
+      <div class="sub animate-on-scroll">Crafting digital experiences with passion, precision, and a touch of magic ✨</div>
+      <p class="lead animate-on-scroll">Hi — I'm <strong>Subasri Mohanraj</strong>, a B.Tech IT graduate building polished web applications and AI-enabled tools. I focus on clean UI, performant code, and products people love.</p>
+      <div class="cta animate-on-scroll">
+        <button class="btn btn-primary" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">View My Work</button>
+        <button class="btn" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Get in touch</button>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="container about" id="about">
+      <div class="profile-hex animate-on-scroll">
+        <div class="art">
+          <img src="./Images/M.Subasri Photo .jpg" alt="Profile Photo">
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <h2>Passionate Creator</h2>
+        <p>I'm a creative developer who loves turning ideas into beautiful, functional digital experiences. With a keen eye for design and a passion for clean code, I build websites and applications that not only look amazing but perform reliably.</p>
+        <div class="stats">
+          <div class="stat"><h3>3+</h3><p>Projects</p></div>
+          <div class="stat"><h3>Fresher</h3><p>Years Exp</p></div>
+          <div class="stat"><h3>3</h3><p>Internships</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="container projects" id="projects">
+      <h2 class="section-title">My Portfolio</h2>
+      <div class="projects-grid">
+        <div class="card project-card animate-on-scroll" data-tilt>
+          <div class="card-media">🌐</div>
+          <div class="card-body">
+            <h4>Event Management System (Angular)</h4>
+            <p>Browse packages, customize services, and manage bookings with a clean, responsive UI.</p>
+            <div class="tags"><span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">HTML</span></div>
+          </div>
+        </div>
+        <div class="card project-card animate-on-scroll" data-tilt>
+          <div class="card-media">🤖</div>
+          <div class="card-body">
+            <h4>AI Accessibility Assistant</h4>
+            <p>Speech↔Text with basic sign-language recognition to bridge communication in virtual platforms.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">HTML</span></div>
+          </div>
+        </div>
+        <div class="card project-card animate-on-scroll" data-tilt>
+          <div class="card-media">📱</div>
+          <div class="card-body">
+            <h4>Responsive Portfolio</h4>
+            <p>Modern, animated portfolio with particles, scroll reveals, and 3D tilt.</p>
+            <div class="tags"><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">UX</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (ID ADDED TO MATCH NAV LINK) -->
+    <section class="container" id="skills">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-wrap">
+        <div class="technical-skills animate-on-scroll">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <p>HTML, CSS, JS <span>95%</span></p>
+            <div class="progress-bar"><div style="--to:95%"></div></div>
+          </div>
+          <div class="skill">
+            <p>Python / Django <span>90%</span></p>
+            <div class="progress-bar"><div style="--to:90%"></div></div>
+          </div>
+          <div class="skill">
+            <p>Angular, SQL <span>85%</span></p>
+            <div class="progress-bar"><div style="--to:85%"></div></div>
+          </div>
+        </div>
+        <div class="creative-tools animate-on-scroll">
+          <h3>Creative Tools</h3>
+          <div class="tools-grid">
+            <div class="tool-card"><img src="https://img.icons8.com/color/48/paint-palette.png" alt="Figma"><p>Figma</p></div>
+            <div class="tool-card"><img src="https://img.icons8.com/color/48/adobe-xd.png" alt="Adobe XD"><p>Adobe XD</p></div>
+            <div class="tool-card"><img src="https://img.icons8.com/color/48/adobe-photoshop.png" alt="Photoshop"><p>Photoshop</p></div>
+            <div class="tool-card"><img src="https://img.icons8.com/color/48/adobe-after-effects.png" alt="After Effects"><p>After Effects</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container contact" id="contact">
+      <div class="animate-on-scroll">
+        <h2 class="section-title" style="-webkit-text-fill-color:initial;color:#fff">Let's Connect</h2>
+        <p class="contact-subtext">Ready to bring your ideas to life? Let's collaborate and create something amazing together.</p>
+        <div class="contact-info">
+          <div class="stat" style="text-align:left"><div><strong>✉️ Email</strong><div>subasrim10@gmail.com</div></div></div>
+          <div class="stat" style="text-align:left"><div><strong>📞 Phone</strong><div>+91 9025790419</div></div></div>
+          <div class="stat" style="text-align:left"><div><strong>📍 Location</strong><div>Tiruchirappalli, Tamil Nadu</div></div></div>
+        </div>
+      </div>
+
+      <form onsubmit="return demoSubmit(event)" class="animate-on-scroll">
+        <div class="field"><input type="text" name="name" placeholder="Your Name" required></div>
+        <div class="field"><input type="email" name="email" placeholder="Your Email" required></div>
+        <div class="field"><textarea name="message" placeholder="Your Message" required></textarea></div>
+        <div style="text-align:right"><button class="btn btn-primary" type="submit">Send Message (Demo)</button></div>
+      </form>
+    </section>
+
+    <footer>© 2025 Subasri Mohanraj • Crafted with ♥ and ☕</footer>
+  </main>
+
+  <button id="back-to-top" aria-label="Back to top">↑ Top</button>
+<script src="./index.js"></script>
+   
+</body>
+</html>
